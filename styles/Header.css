@@ -1,0 +1,6 @@
+header {
+  text-align: center;
+  vertical-align: center;
+  background-color: var(--secondary);
+  padding: 10px;
+}
