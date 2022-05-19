@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/App.css';
+import Q from '../data/questions.json';
 
 function App() {
+
+  const [qData, setQuestion] = useState(Q);
+  
   return (
     <main>
-      <div class="qa-container">
-        
-        <h4 class="question">Q) What is a regular language?</h4>
-        <p class="answer">A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression</p>
-        
-      </div>
+        {qData.map((data) => (
+          <div class="qa-container">
+            <h4 class="question">Q) {data.question}</h4>
+            <p class="answer">{data.answer}</p>
+          </div>
+        ))}
     </main>
   );
 }

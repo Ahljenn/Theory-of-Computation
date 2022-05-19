@@ -1,0 +1,6 @@
+[
+    {
+    "question":"What is a regular language?",
+    "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression"
+    }
+]
