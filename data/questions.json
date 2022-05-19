@@ -9,7 +9,7 @@
     },
     {
       "question": "When does a nondeterminstic finite automaton accept a string?",
-      "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)"
+      "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
     },
     {
       "question": "What does a nondeterminstic turing machine consist of?",
@@ -25,16 +25,15 @@
     },
     {
       "question": "What are the points on the boundary of Poly and Expo?",
-      "answer": "Problems that seem similar can have very different complexities. Some Expo problems are easily proved to be outside of Poly. Many problems seem to require superpolynomial time, but haven’t been proved to require superpolynomial time"
+      "answer": "Problems that seem similar can have very different complexities. Some Expo problems are easily proved to be outside of Poly. Many problems seem to require superpolynomial time, but haven’t been proved to require superpolynomial time."
     },
     {
       "question": "What are some properties of Turing reductions?",
       "answer": "Turing-reducibility is transitive. Propagation of computability - If F reduces to G then: (a) if G is computable, then F is computable. (b) if F is uncomputable, then G is uncomputable."
     },
-  
     {
       "question": "What is the difference between a strict NFA and an NFA?",
-      "answer": "A strict NFA transition fucntion maps to set of states. An NFA allows for ∈-transitions"
+      "answer": "A strict NFA transition fucntion maps to set of states. An NFA allows for ∈-transitions."
     },
     {
       "question": "What is a verifier?",
