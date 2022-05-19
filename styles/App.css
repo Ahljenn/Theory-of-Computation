@@ -1,6 +1,7 @@
 :root {
   --main: #1c2333;
   --secondary: #0e1525;
+  --acid : #a5be00;
 }
 
 body {
@@ -30,7 +31,7 @@ main {
 
 .answer:hover {
   transition: color 0.6s ease-out;
-  color: white;
+  color: var(--acid);
 }
 
 a {
