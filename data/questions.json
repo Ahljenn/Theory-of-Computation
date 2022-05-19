@@ -12,6 +12,10 @@
       "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
     },
     {
+      "question": "How does adding nondeterminsim effect a computational model in terms of computability and complexity?",
+      "answer": "Does not change what we can compute, but changes how fast we can compute it"
+    },
+    {
       "question": "What does a nondeterminstic turing machine consist of?",
       "answer": "The transition function that maps (q, x) to a finite set of possible 3-tuples (rather than a single 3-tuple). (q' - new state, x' - new symbol, d' - direction to move)."
     },
