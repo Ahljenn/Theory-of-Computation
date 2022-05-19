@@ -24,10 +24,12 @@ main {
 }
 
 .answer {
+  transition: color 0.5s ease-out;
   color: var(--secondary);
 }
 
 .answer:hover {
+  transition: color 0.6s ease-out;
   color: white;
 }
 
