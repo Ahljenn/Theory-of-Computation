@@ -1,2 +1,2 @@
 ## Theory of Computation Review
-Webapp built using React.JS
+Webapp for final course exam built using React.JS

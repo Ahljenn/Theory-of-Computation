@@ -9,11 +9,11 @@ function Header() {
       
       <p>Questions from John MacCormick's 
         <a href="https://whatcanbecomputed.com/">
-          <i>What Can Be Computed?</i>
+          <i> What Can Be Computed?</i>
         </a>
       </p>
       
-      <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+      <button title="Shuffle questions"><i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i></button>
 
     </header>
   );

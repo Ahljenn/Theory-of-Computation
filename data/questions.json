@@ -1,6 +1,36 @@
 [
     {
-    "question":"What is a regular language?",
+    "question": "What is a regular language?",
     "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression"
+    },
+    {
+      "question": "What are the three factors of runtime?",
+      "answer": "Dependence on hardware. Dependence on easy or hard input. Dependence on length of the input"
+    },
+    {
+      "question": "What is a verifier?",
+      "answer": "A program that checks solutions to computation problems"
+    },
+    {
+      "question": "Why are PolyCheck and NPoly identical?",
+      "answer": "PolyCheck is in NPoly, and vice versa"
+    },
+    {
+      "question": "Which complexity class does not depend on the type of computational model used?",
+      "answer": "O(1) - Constant Time"
+    },
+    {
+      "question": "What does it mean if F 'reduces' to G?",
+      "answer": "F can be solved if G can be solved; F is no harder than G"
+    },
+    {
+      "question": "What does a DFA consist of?",
+      "answer": "Alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)"
+    },
+    {
+      "question": "What does a DFA consist of?",
+      "answer": "Alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)"
     }
+  
+  
 ]
