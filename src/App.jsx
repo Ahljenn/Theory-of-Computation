@@ -4,13 +4,13 @@ import Q from '../data/questions.json';
 
 function App() {
 
-  const [qData, setQuestion] = useState(Q);
+  const [qData] = useState(Q);
   
   return (
     <main>
         {qData.map((data) => (
           <div class="qa-container">
-            <h4 class="question">Q) {data.question}</h4>
+            <h4 class="question">{data.question}</h4>
             <p class="answer">{data.answer}</p>
           </div>
         ))}

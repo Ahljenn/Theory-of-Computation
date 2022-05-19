@@ -1,36 +1,71 @@
 [
     {
+      "question": "What is the definition of the output of a terminating nondeterminstic computation?",
+      "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined."
+    },
+    {
+      "question": "What does a determinstic finite automaton consist of?",
+      "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)."
+    },
+    {
+      "question": "When does a nondeterminstic finite automaton accept a string?",
+      "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)"
+    },
+    {
+      "question": "What does a nondeterminstic turing machine consist of?",
+      "answer": "The transition function that maps (q, x) to a finite set of possible 3-tuples (rather than a single 3-tuple). (q' - new state, x' - new symbol, d' - direction to move)."
+    },
+    {
     "question": "What is a regular language?",
-    "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression"
+    "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression."
     },
     {
       "question": "What are the three factors of runtime?",
-      "answer": "Dependence on hardware. Dependence on easy or hard input. Dependence on length of the input"
+      "answer": "Dependence on hardware. Dependence on easy or hard input. Dependence on length of the input."
+    },
+    {
+      "question": "What are the points on the boundary of Poly and Expo?",
+      "answer": "Problems that seem similar can have very different complexities. Some Expo problems are easily proved to be outside of Poly. Many problems seem to require superpolynomial time, but haven’t been proved to require superpolynomial time"
+    },
+    {
+      "question": "What are some properties of Turing reductions?",
+      "answer": "Turing-reducibility is transitive. Propagation of computability - If F reduces to G then: (a) if G is computable, then F is computable. (b) if F is uncomputable, then G is uncomputable."
+    },
+  
+    {
+      "question": "What is the difference between a strict NFA and an NFA?",
+      "answer": "A strict NFA transition fucntion maps to set of states. An NFA allows for ∈-transitions"
     },
     {
       "question": "What is a verifier?",
-      "answer": "A program that checks solutions to computation problems"
+      "answer": "A program that checks solutions to computation problems."
     },
     {
       "question": "Why are PolyCheck and NPoly identical?",
-      "answer": "PolyCheck is in NPoly, and vice versa"
+      "answer": "PolyCheck is in NPoly, and vice versa."
     },
     {
       "question": "Which complexity class does not depend on the type of computational model used?",
-      "answer": "O(1) - Constant Time"
+      "answer": "O(1) - Constant Time."
+    },
+    {
+      "question": "What is a computational problem?",
+      "answer": "Given an alphabet Σ, a computational problem is a function mapping strings on Σ to sets of strings on Σ"
     },
     {
       "question": "What does it mean if F 'reduces' to G?",
-      "answer": "F can be solved if G can be solved; F is no harder than G"
+      "answer": "F can be solved if G can be solved; F is no harder than G."
     },
     {
-      "question": "What does a DFA consist of?",
-      "answer": "Alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)"
+      "question": "What are the three main models of nondeterminism?",
+      "answer": "Simultaneous threads. Random choice. External choice."
     },
     {
-      "question": "What does a DFA consist of?",
-      "answer": "Alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)"
+      "question": "What is a computation tree?",
+      "answer": "A type of labeled grapht that helps visualize the effect of a nondetermionstic program."
+    },
+    {
+      "question": "When is a computational problem F in the complexity class PolyCheck?",
+      "answer": "F is in PolyCheck if we can verify / check its positive instances in polynomial time."
     }
-  
-  
 ]

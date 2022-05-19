@@ -8,12 +8,13 @@ function Header() {
       <h1>Theory of Computation: Review</h1>
       
       <p>Questions from John MacCormick's 
-        <a href="https://whatcanbecomputed.com/">
-          <i> What Can Be Computed?</i>
-        </a>
+        <b><i> What Can Be Computed?</i></b>
       </p>
+      <p><i>Computability & Complexity</i></p>
       
-      <button title="Shuffle questions"><i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i></button>
+      <button title="Shuffle questions">
+        <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+      </button>
 
     </header>
   );

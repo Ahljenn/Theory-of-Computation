@@ -12,6 +12,7 @@ body {
 main {
   text-align: center;
   vertical-align: center;
+  padding-bottom: 20px;
 }
 
 .qa-container {
@@ -25,6 +26,7 @@ main {
 }
 
 .answer {
+  font-style: italic;
   transition: color 0.5s ease-out;
   color: var(--secondary);
 }
