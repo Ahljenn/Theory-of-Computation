@@ -10,7 +10,7 @@ function App() {
     <main>
       <input
         type="text"
-        placeholder="Search question"
+        placeholder="Search a term or concept"
         onChange={(event) => {
           setSearchTerm(event.target.value);
         }}
@@ -18,7 +18,8 @@ function App() {
       {qData.filter((val) => {
         if (searchTerm == ""){
           return val;
-        } else if (val.question.toLowerCase().includes(searchTerm.toLowerCase())) {
+        } else if (val.question.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                  val.answer.toLowerCase().includes(searchTerm.toLowerCase())) {
           return val;
         }
       }).map((val, key) => {

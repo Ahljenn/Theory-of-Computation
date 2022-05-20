@@ -16,6 +16,19 @@ main {
   padding-bottom: 20px;
 }
 
+input[type=text], select {
+  box-sizing: border-box;
+  height: 30px;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus, select:focus {
+  border: 3px solid var(--acid);
+}
+
 .qa-container {
   display: flex;
   flex-direction: column;
