@@ -4,11 +4,11 @@
       "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined."
     },
     {
-      "question": "What does a determinstic finite automaton consist of?",
+      "question": "What does a determinstic finite automaton (DFA) consist of?",
       "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)."
     },
     {
-      "question": "When does a nondeterminstic finite automaton accept a string?",
+      "question": "When does an nondeterminstic finite automaton (NFA) accept a string?",
       "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
     },
     {

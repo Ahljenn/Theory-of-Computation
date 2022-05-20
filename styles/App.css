@@ -17,11 +17,18 @@ main {
 }
 
 input[type=text], select {
+  
+  background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 27px;
+  
+  padding: 12px 16px 12px 30px;
   box-sizing: border-box;
   height: 30px;
   border: 3px solid #ccc;
   -webkit-transition: 0.5s;
-  transition: 0.5s;
+  transition: 2.0s;
   outline: none;
 }
 

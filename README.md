@@ -1,5 +1,6 @@
 ## Theory of Computation Review
-Webapp for final course exam built using React.JS presented in quizlet form.
+Webapp for final course exam review built using React.JS presented in quizlet form.
+Contains a search bar to filter contents based on question or answer key words.
 
 [Access site](https://theory-of-computation.ahljennetics.repl.co/)
 
