@@ -4,6 +4,10 @@
       "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined."
     },
     {
+      "question": "Is a Turing machine as powerful as finite automata?",
+      "answer": "Turing machines are strictly more powerful than finite automata since they can use the tape to remember as much information as desired - finite set of states but infinitely many possible configurations."
+    },
+    {
       "question": "When does an nondeterminstic finite automaton (NFA) accept a string?",
       "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
     },
@@ -26,6 +30,10 @@
     {
       "question": "What are the three factors of runtime?",
       "answer": "Dependence on hardware. Dependence on easy or hard input. Dependence on length of the input."
+    },
+    {
+      "question": "Name the key differences between Turing machines and finite automata.",
+      "answer": "DFA - fixed, finite number of states (limited). Turing machine - finite set of states but seemingly infinite memory"
     },
     {
       "question": "What are the points on the boundary of Poly and Expo?",
