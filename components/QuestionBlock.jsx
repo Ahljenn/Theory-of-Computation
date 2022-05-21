@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 //Component that renders a question block
 function QuestionBlock(props){
   return (
