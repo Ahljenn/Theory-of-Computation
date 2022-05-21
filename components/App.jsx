@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/App.css';
+import QuestionBlock from './QuestionBlock.jsx';
 import Q from '../data/questions.json';
+import '../styles/App.css';
 
+//Main app component
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [qData] = useState(Q);
@@ -21,12 +23,9 @@ function App() {
                    val.answer.toLowerCase().includes(searchTerm.toLowerCase())) {
           return val;
         }
-      }).map((val, key) => {
+      }).map((val) => {
           return (
-            <div class="qa-container">
-              <h4 class="question">{val.question}</h4>
-              <p class="answer">{val.answer}</p>
-            </div>
+            <QuestionBlock item={val} />
           );
       })}
     </main>

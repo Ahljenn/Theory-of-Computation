@@ -1,19 +1,19 @@
 [
     {
-      "question": "What is the definition of the output of a terminating nondeterminstic computation?",
+      "question": "What are the possible outputs of a terminating nondeterminstic computation?",
       "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined."
-    },
-    {
-      "question": "What does a determinstic finite automaton (DFA) consist of?",
-      "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)."
     },
     {
       "question": "When does an nondeterminstic finite automaton (NFA) accept a string?",
       "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
     },
     {
+      "question": "What does a determinstic finite automaton (DFA) consist of?",
+      "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)."
+    },
+    {
       "question": "How does adding nondeterminsim effect a computational model in terms of computability and complexity?",
-      "answer": "Does not change what we can compute, but changes how fast we can compute it"
+      "answer": "Does not change what we can compute, but changes how fast we can compute it."
     },
     {
       "question": "What does a nondeterminstic turing machine consist of?",
@@ -53,11 +53,15 @@
     },
     {
       "question": "What is a computational problem?",
-      "answer": "Given an alphabet Σ, a computational problem is a function mapping strings on Σ to sets of strings on Σ"
+      "answer": "Given an alphabet Σ, a computational problem is a function mapping strings on Σ to sets of strings on Σ."
     },
     {
       "question": "What does it mean if F 'reduces' to G?",
       "answer": "F can be solved if G can be solved; F is no harder than G."
+    },
+    {
+      "question": "What is the significance of a regular expression (regex) in terms of the theory of computation?",
+      "answer": "Given any DFA or NFA, there is an equivalent regular expression. Given any regular expression, there is an equivalent DFA."
     },
     {
       "question": "What are the three main models of nondeterminism?",
