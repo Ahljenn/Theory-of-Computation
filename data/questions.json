@@ -1,14 +1,10 @@
 [
     {
-      "question": "Why would a verifier output 'unsure?' and never 'incorrect?'",
-      "answer": "The proposed solution is actually incorrect or the hint was wrong. There is no way in distinguishing these two cases so verifiers only output 'correct' or 'unsure.'"
-    },
-    {
       "question": "What are the possible outputs of a terminating nondeterministic computation?",
       "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined."
     },
     {
-      "question": "Is a Turing machine as powerful as finite automata?",
+      "question": "Is a Turing machine as powerful as finite automata? Why or why not?",
       "answer": "Turing machines are strictly more powerful than finite automata since they can use the tape to remember as much information as desired - finite set of states but infinitely many possible configurations."
     },
     {
@@ -18,6 +14,10 @@
     {
       "question": "When does an nondeterministic finite automaton (NFA) accept a string?",
       "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
+    },
+    {
+      "question": "Why would a verifier output 'unsure?' and never 'incorrect?'",
+      "answer": "The proposed solution is actually incorrect or the hint was wrong. There is no way in distinguishing these two cases so verifiers only output 'correct' or 'unsure.'"
     },
     {
       "question": "What does a deterministic finite automaton (DFA) consist of?",

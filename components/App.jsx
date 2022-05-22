@@ -21,12 +21,15 @@ function App() {
   const [searchTerm, setSearchTerm] = useState(""); //Set initial state of search to be nothing (no search yet)
   const [questionData, setQuestionData] = useState(Q);
   const [text, setText] = useState("");
+
+  useEffect(() => {
+    console.log("Rendering question/answer sets...");
+  }, [searchTerm])
   
   function handleShuffle(){
-    //todo: Clear value field for search bar
     setQuestionData(shuffleQuestions(questionData)); 
     setText(""); //Resets the input field on shuffle
-    setSearchTerm(searchTerm == "" ? " " : ""); //Set search term to either empty string or space depending on current value to re-render the page
+    setSearchTerm(searchTerm == "" ? " " : ""); //Set search term to either empty string or space depending on current value to re-render the component
   }
 
   function handleText(){
