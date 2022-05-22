@@ -1,0 +1,10 @@
+[
+    {
+      "question": "What are problems in the complexity class Poly?",
+      "answer": "ContainsGAGA, Multiply, SortWords"
+    },
+    {
+      "question": "What are problems in the complexity class Expo?",
+      "answer": "ContainsGAGA, Multiply, SortWords, Factor, MCopiesOfC"
+    }
+]

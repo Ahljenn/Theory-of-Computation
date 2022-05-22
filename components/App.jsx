@@ -3,6 +3,8 @@ import QuestionBlock from './QuestionBlock.jsx';
 import Q from '../data/questions.json';
 import '../styles/App.css';
 
+//https://react-bootstrap.github.io/getting-started/introduction/
+
 //Shuffle questions each visit
 function shuffleQuestions(arr){
   let i = arr.length - 1;
@@ -15,7 +17,6 @@ function shuffleQuestions(arr){
   return arr;
 }
 
-//Main app component
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [qData] = useState(shuffleQuestions(Q));

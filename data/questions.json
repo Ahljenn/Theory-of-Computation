@@ -8,6 +8,10 @@
       "answer": "Turing machines are strictly more powerful than finite automata since they can use the tape to remember as much information as desired - finite set of states but infinitely many possible configurations."
     },
     {
+      "question": "What is considered a 'computational step?'",
+      "answer": "A single CPU instruction for a Python program, or single transition for a Turing machine"
+    },
+    {
       "question": "When does an nondeterminstic finite automaton (NFA) accept a string?",
       "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
     },
@@ -48,6 +52,10 @@
       "answer": "A strict NFA transition fucntion maps to set of states. An NFA allows for ∈-transitions."
     },
     {
+      "question": "What is implied if F 'polyreduces' to G?",
+      "answer": "If you can solve G in polynomial time, you can also solve F in polynomial time"
+    },
+    {
       "question": "What is a verifier?",
       "answer": "A program that checks solutions to computation problems."
     },
@@ -64,7 +72,7 @@
       "answer": "Given an alphabet Σ, a computational problem is a function mapping strings on Σ to sets of strings on Σ."
     },
     {
-      "question": "What does it mean if F 'reduces' to G?",
+      "question": "What is implied if F 'reduces' to G?",
       "answer": "F can be solved if G can be solved; F is no harder than G."
     },
     {
