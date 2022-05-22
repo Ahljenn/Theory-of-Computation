@@ -18,18 +18,20 @@ function shuffleQuestions(arr){
 }
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(""); //Set initial state of search to be nothing (no search yet)
   const [qData] = useState(shuffleQuestions(Q));
+  
   return (
     <main>
       <input
         type="text"
         placeholder="Search a keyword to filter topics..."
         onChange={(event) => {
-          setSearchTerm(event.target.value);
+          setSearchTerm(event.target.value); 
+          //Set value of search term once its value changes
         }}
       />
-      {qData.filter((val) => {
+      {qData.filter((val) => { //Filter JSON data first before mapping
         if (searchTerm == ""){
           return val;
         } else if (val.question.toLowerCase().includes(searchTerm.toLowerCase()) || 

@@ -1,6 +1,10 @@
 [
     {
-      "question": "What are the possible outputs of a terminating nondeterminstic computation?",
+      "question": "Why would a verifier output 'unsure?' and never 'incorrect?'",
+      "answer": "The proposed solution is actually incorrect or the hint was wrong. There is no way in distinguishing these two cases so verifiers only output 'correct' or 'unsure.'"
+    },
+    {
+      "question": "What are the possible outputs of a terminating nondeterministic computation?",
       "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined."
     },
     {
@@ -12,11 +16,11 @@
       "answer": "A single CPU instruction for a Python program, or single transition for a Turing machine"
     },
     {
-      "question": "When does an nondeterminstic finite automaton (NFA) accept a string?",
+      "question": "When does an nondeterministic finite automaton (NFA) accept a string?",
       "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
     },
     {
-      "question": "What does a determinstic finite automaton (DFA) consist of?",
+      "question": "What does a deterministic finite automaton (DFA) consist of?",
       "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)."
     },
     {
@@ -24,7 +28,7 @@
       "answer": "Does not change what we can compute, but changes how fast we can compute it."
     },
     {
-      "question": "What does a nondeterminstic turing machine consist of?",
+      "question": "What does a nondeterministic turing machine consist of?",
       "answer": "The transition function that maps (q, x) to a finite set of possible 3-tuples (rather than a single 3-tuple). (q' - new state, x' - new symbol, d' - direction to move)."
     },
     {
@@ -85,7 +89,7 @@
     },
     {
       "question": "What is a computation tree?",
-      "answer": "A type of labeled grapht that helps visualize the effect of a nondetermionstic program."
+      "answer": "A type of labeled graph that helps visualize the effect of a nondeterministic program."
     },
     {
       "question": "When is a computational problem F in the complexity class PolyCheck?",
