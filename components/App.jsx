@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import QuestionBlock from './QuestionBlock.jsx';
 import Q from '../data/questions.json';
 import '../styles/App.css';
@@ -20,10 +20,19 @@ function shuffleQuestions(arr){
 function App() {
   const [searchTerm, setSearchTerm] = useState(""); //Set initial state of search to be nothing (no search yet)
   const [questionData, setQuestionData] = useState(Q);
+  const [text, setText] = useState("");
+  
+  function handleShuffle(){
+    //todo: Clear value field for search bar
+    setQuestionData(shuffleQuestions(questionData)); 
+    setText(""); //Resets the input field on shuffle
+    setSearchTerm(searchTerm == "" ? " " : ""); //Set search term to either empty string or space depending on current value to re-render the page
+  }
 
-  useEffect(() => {
-    console.log("Rendering question-answer sets");
-  }, [searchTerm]);
+  function handleText(){
+    setSearchTerm(event.target.value); 
+    setText(event.target.value); //Allows text to reset on button click (shuffle)
+  }
   
   return (
     <main>
@@ -31,22 +40,16 @@ function App() {
         <button 
           class="shuffle-button" 
           title="Shuffle questions"
-          onClick={() => {
-            setQuestionData(shuffleQuestions(questionData)); 
-            setSearchTerm(searchTerm == "" ? " " : ""); //Set search term to either empty string or space depending on current value to re-render the page
-          }}
+          onClick={handleShuffle}
         >
           <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
         </button>
         
         <input
-          title="keyword"
           type="text"
+          value={text}
           placeholder="Search a keyword to filter topics..."
-          onChange={(event) => {
-            setSearchTerm(event.target.value); 
-            //Set value of search term once its value changes
-          }}
+          onChange={handleText}
         />
       </div>
       {questionData.filter((val) => { //Filter JSON data first before mapping
