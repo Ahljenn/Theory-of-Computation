@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QuestionBlock from './QuestionBlock.jsx';
 import Q from '../data/questions.json';
 import '../styles/App.css';
@@ -19,19 +19,37 @@ function shuffleQuestions(arr){
 
 function App() {
   const [searchTerm, setSearchTerm] = useState(""); //Set initial state of search to be nothing (no search yet)
-  const [qData] = useState(shuffleQuestions(Q));
+  const [questionData, setQuestionData] = useState(Q);
+
+  useEffect(() => {
+    console.log("Rendering question-answer sets");
+  }, [searchTerm]);
   
   return (
     <main>
-      <input
-        type="text"
-        placeholder="Search a keyword to filter topics..."
-        onChange={(event) => {
-          setSearchTerm(event.target.value); 
-          //Set value of search term once its value changes
-        }}
-      />
-      {qData.filter((val) => { //Filter JSON data first before mapping
+      <div class="interactions">
+        <button 
+          class="shuffle-button" 
+          title="Shuffle questions"
+          onClick={() => {
+            setQuestionData(shuffleQuestions(questionData)); 
+            setSearchTerm(searchTerm == "" ? " " : ""); //Set search term to either empty string or space depending on current value to re-render the page
+          }}
+        >
+          <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+        </button>
+        
+        <input
+          title="keyword"
+          type="text"
+          placeholder="Search a keyword to filter topics..."
+          onChange={(event) => {
+            setSearchTerm(event.target.value); 
+            //Set value of search term once its value changes
+          }}
+        />
+      </div>
+      {questionData.filter((val) => { //Filter JSON data first before mapping
         if (searchTerm == ""){
           return val;
         } else if (val.question.toLowerCase().includes(searchTerm.toLowerCase()) || 

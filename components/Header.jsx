@@ -14,9 +14,7 @@ function Header() {
       </p>
       <p><i>Computability & Complexity</i></p>
       
-      <button title="Shuffle questions">
-        <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
-      </button>
+
 
     </header>
   );
