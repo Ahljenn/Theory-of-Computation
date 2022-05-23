@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     setQuestionCount(counter);
     console.log("Rendering question/answer sets...");
-  }, [searchTerm])
+  }, [searchTerm]);
   
   function handleShuffle(){
     setQuestionData(shuffleQuestions(questionData)); 

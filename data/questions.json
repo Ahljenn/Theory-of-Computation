@@ -1,110 +1,122 @@
 [
     {
       "question": "What are the possible outputs of a terminating nondeterministic computation?",
-      "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined."
-    },
-    {
-      "question": "Is a Turing machine as powerful as finite automata? Why or why not?",
-      "answer": "Turing machines are strictly more powerful than finite automata since they can use their tape to remember as much information as desired - finite set of states but infinitely many possible configurations."
-    },
-    {
-      "question": "When does a program P recognize a language L?",
-      "answer": "For all I ∈ L, P(I) = 'yes'. For all I ∉ L, either P(I) is undefined or P(I) = 'no.'"
-    },
-    {
-      "question": "How can it be that universal computation appears in the real world?",
-      "answer": "There exists universal Python programs that can simulate other python programs. It has also been observed there exists an equivalent Turing machine U. Any modern computer has universally built into it at several layers through some form of abstraction."
-    },
-    {
-      "question": "What is considered a 'computational step?'",
-      "answer": "A single CPU instruction for a Python program, or single transition for a Turing machine"
+      "answer": "If all leaves of a (finite) computation tree, T, are negative, the output is 'no'. If T has any positive leaves, any one of the positive return values is a possible output; Otherwise, output is undefined. - 151"
     },
     {
       "question": "When does an nondeterministic finite automaton (NFA) accept a string?",
-      "answer": "Accepts if any clone accepts. Rejects of all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop)."
+      "answer": "Accepts if any clone accepts. Rejects if all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop). - 170"
+    },
+    {
+      "question": "Is a Turing machine as powerful as finite automata? Why or why not?",
+      "answer": "Turing machines are strictly more powerful than finite automata since they can use their tape to remember as much information as desired - finite set of states but infinitely many possible configurations. - 183"
+    },
+    {
+      "question": "When does a program P recognize a language L?",
+      "answer": "For all I ∈ L, P(I) = 'yes'. For all I ∉ L, either P(I) is undefined or P(I) = 'no.' It must decide on all positive instances. - 65"
+    },
+    {
+      "question": "When does a program P decide a language L?",
+      "answer": "A language or decision problem is decidable if some program correctly decides all instances, whether positive or negative. - 113"
+    },
+    {
+      "question": "How can it be that universal computation appears in the real world?",
+      "answer": "There exists universal Python programs that can simulate other python programs. It has also been observed there exists an equivalent Turing machine U. Any modern computer has universally built into it at several layers through some form of abstraction. - 107"
+    },
+    {
+      "question": "What is considered a 'computational step?'",
+      "answer": "A single CPU instruction for a Python program, or single transition for a Turing machine - 129"
     },
     {
       "question": "Why would a verifier output 'unsure?' and never 'incorrect?'",
-      "answer": "The proposed solution is actually incorrect or the hint was wrong. There is no way in distinguishing these two cases so verifiers only output 'correct' or 'unsure.'"
+      "answer": "The proposed solution is actually incorrect or the hint was wrong. There is no way in distinguishing these two cases so verifiers only output 'correct' or 'unsure.' - 253"
     },
     {
       "question": "What does a deterministic finite automaton (DFA) consist of?",
-      "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject)."
+      "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject). - 164"
     },
     {
       "question": "How does adding nondeterminsim effect a computational model in terms of computability and complexity?",
-      "answer": "Does not change what we can compute, but changes how fast we can compute it."
+      "answer": "Does not change what we can compute, but changes how fast we can compute it. - 170"
     },
     {
       "question": "What does a nondeterministic turing machine consist of?",
-      "answer": "The transition function that maps (q, x) to a finite set of possible 3-tuples (rather than a single 3-tuple). (q' - new state, x' - new symbol, d' - direction to move)."
+      "answer": "The transition function that maps (q, x) to a finite set of possible 3-tuples (rather than a single 3-tuple). (q' - new state, x' - new symbol, d' - direction to move). - 74"
     },
     {
       "question": "What is a regular language?",
-      "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression."
+      "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression. - 181"
     },
     {
       "question": "What are the three factors of runtime?",
-      "answer": "Dependence on hardware. Dependence on easy or hard input. Dependence on length of the input."
+      "answer": "Dependence on hardware. Dependence on easy or hard input. Dependence on length of the input. - 196"
     },
     {
       "question": "What is the halting problem and why is it practical?",
-      "answer": "Given any program P and input I, we ask does P terminate (or halt) on input I? Some types of software halt such as computational programs whereas some run indefinitely (i.e: Operating Systems and Web servers.)"
+      "answer": "Given any program P and input I, we ask does P terminate (or halt) on input I? Some types of software halt such as computational programs whereas some run indefinitely (i.e: Operating Systems and Web servers.) - 126"
+    },
+    {
+      "question": "What does it mean if two computational models are said to be 'Turing equivalent?'",
+      "answer": "Two computational models are 'Turing equivalent' if they can solve the same set of probkems. - 98"
     },
     {
       "question": "Name the key differences between Turing machines and finite automata.",
-      "answer": "DFA - fixed, finite number of states (limited). Turing machine - finite set of states but seemingly infinite memory"
+      "answer": "DFA - fixed, finite number of states (limited). Turing machine - finite set of states but seemingly infinite memory - 183"
     },
     {
-      "question": "What are the points on the boundary of Poly and Expo?",
-      "answer": "Problems that seem similar can have very different complexities. Some Expo problems are easily proved to be outside of Poly. Many problems seem to require superpolynomial time, but haven’t been proved to require superpolynomial time."
+      "question": "What are the key points on the boundary of the complexity classes Poly and Expo?",
+      "answer": "Problems that seem similar can have very different complexities. Some Expo problems are easily proved to be outside of Poly. Many problems seem to require superpolynomial time, but haven’t been proved to require superpolynomial time. - 231"
     },
     {
       "question": "What are some properties of Turing reductions?",
-      "answer": "Turing-reducibility is transitive. Propagation of computability - If F reduces to G then: (a) if G is computable, then F is computable. (b) if F is uncomputable, then G is uncomputable."
+      "answer": "Turing-reducibility is transitive. Propagation of computability - If F reduces to G then: (a) if G is computable, then F is computable. (b) if F is uncomputable, then G is uncomputable. - 122"
     },
     {
       "question": "What is the difference between a strict NFA and an NFA?",
-      "answer": "A strict NFA transition fucntion maps to set of states. An NFA allows for ∈-transitions."
+      "answer": "A strict NFA transition fucntion maps to set of states. An NFA allows for ∈-transitions. - 169"
     },
     {
       "question": "What is implied if F 'polyreduces' to G?",
-      "answer": "If you can solve G in polynomial time, you can also solve F in polynomial time"
+      "answer": "If you can solve G in polynomial time, you can also solve F in polynomial time. - 273"
     },
     {
       "question": "What is a verifier?",
-      "answer": "A program that checks solutions to computation problems."
+      "answer": "A program that checks solutions to computation problems. - 250"
     },
     {
       "question": "Why are PolyCheck and NPoly identical?",
-      "answer": "PolyCheck is in NPoly, and vice versa."
+      "answer": "PolyCheck is in NPoly, and vice versa. - 259"
     },
     {
       "question": "Which complexity class does not depend on the type of computational model used?",
-      "answer": "O(1) - Constant Time."
+      "answer": "O(1) - Constant Time. - 223"
     },
     {
       "question": "What is a computational problem?",
-      "answer": "Given an alphabet Σ, a computational problem is a function mapping strings on Σ to sets of strings on Σ."
+      "answer": "Given an alphabet Σ, a computational problem is a function mapping strings on Σ to sets of strings on Σ. - 62"
     },
     {
       "question": "What is implied if F 'reduces' to G?",
-      "answer": "F can be solved if G can be solved; F is no harder than G."
+      "answer": "F can be solved if G can be solved; F is no harder than G. - 116"
     },
     {
       "question": "What is the significance of a regular expression (regex) in terms of the theory of computation?",
-      "answer": "Given any DFA or NFA, there is an equivalent regular expression. Given any regular expression, there is an equivalent DFA."
+      "answer": "Given any DFA or NFA, there is an equivalent regular expression. Given any regular expression, there is an equivalent DFA. - 180"
     },
     {
       "question": "What are the three main models of nondeterminism?",
-      "answer": "Simultaneous threads. Random choice. External choice."
+      "answer": "Simultaneous threads. Random choice. External choice. - 158"
     },
     {
       "question": "What is a computation tree?",
-      "answer": "A type of labeled graph that helps visualize the effect of a nondeterministic program."
+      "answer": "A type of labeled graph that helps visualize the effect of a nondeterministic program. - 149"
     },
     {
       "question": "When is a computational problem F in the complexity class PolyCheck?",
-      "answer": "F is in PolyCheck if we can verify / check its positive instances in polynomial time."
+      "answer": "F is in PolyCheck if we can verify / check its positive instances in polynomial time. - 256"
+    },
+    {
+      "question": "When do we call a program 'determinstic?'",
+      "answer": "A program is said to be 'determinstic' if its execution path is uniquely determined by the state of C when the program begins executing.' - 24"
     }
 ]
