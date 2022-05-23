@@ -4,8 +4,6 @@ import QuestionCount from './QuestionCount.jsx';
 import Q from '../data/questions.json';
 import '../styles/App.css';
 
-//https://react-bootstrap.github.io/getting-started/introduction/
-
 //Shuffle questions each visit
 function shuffleQuestions(arr) {
   let i = arr.length - 1;
@@ -19,7 +17,6 @@ function shuffleQuestions(arr) {
 }
 
 function App() {
-  
   const [questionData, setQuestionData] = useState(Q); //Question data
   const [searchTerm, setSearchTerm] = useState(""); //Search value
   const [text, setText] = useState(""); //Search field text

@@ -6,6 +6,7 @@
   --verm: #E34234;
 }
 
+
 body {
   background-color: var(--main);
   color: white;
@@ -17,6 +18,24 @@ main {
   text-align: center;
   vertical-align: center;
   padding-bottom: 20px;
+}
+
+@keyframes qaAnimation{
+  0% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.qa-container {
+  animation: 1.5s ease-out 0s 1 qaAnimation;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input[type=text], select {
@@ -44,12 +63,6 @@ input, select, textarea {
   font-weight: 700;
   width: 100%;
   color: var(--acid);
-}
-
-.qa-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .question {
