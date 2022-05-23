@@ -99,6 +99,23 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+.question-count-container {
+  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.count {
+  font-weight: 700;
+  color: var(--acid);
+}
+
+.count-none {
+  color: red;
+}
+
 @media screen and (max-width: 800px){
   main {
     width: 80%;

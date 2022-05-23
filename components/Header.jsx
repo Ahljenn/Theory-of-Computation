@@ -13,8 +13,6 @@ function Header() {
         <b><i> What Can Be Computed?</i></b>
       </p>
       <p><i>Computability & Complexity</i></p>
-      
-
 
     </header>
   );

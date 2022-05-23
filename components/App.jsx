@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import QuestionBlock from './QuestionBlock.jsx';
+import QuestionCount from './QuestionCount.jsx';
 import Q from '../data/questions.json';
 import '../styles/App.css';
 
@@ -21,8 +22,11 @@ function App() {
   const [searchTerm, setSearchTerm] = useState(""); //Set initial state of search to be nothing (no search yet)
   const [questionData, setQuestionData] = useState(Q);
   const [text, setText] = useState("");
-
+  const [numberQuestions, setQuestionCount] = useState(questionData.length);
+  let counter = 0;
+  
   useEffect(() => {
+    setQuestionCount(counter);
     console.log("Rendering question/answer sets...");
   }, [searchTerm])
   
@@ -39,6 +43,9 @@ function App() {
   
   return (
     <main>
+      
+      <QuestionCount count={numberQuestions} />
+      
       <div class="interactions">
         <button 
           class="shuffle-button" 
@@ -63,6 +70,7 @@ function App() {
           return val;
         }
       }).map((val) => {
+        counter++; //Used for # questions display
           return (
             <QuestionBlock item={val} />
           );
