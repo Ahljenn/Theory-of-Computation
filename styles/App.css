@@ -1,7 +1,8 @@
 :root {
   --main: #1c2333;
   --secondary: #0e1525;
-  --acid : #a5be00;
+  --acid: #a5be00;
+  --verm: #E34234;
 }
 
 body {
@@ -104,7 +105,11 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
+}
+
+.count, .count-none {
+  font-size: 16.5px;
 }
 
 .count {
@@ -113,7 +118,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .count-none {
-  color: red;
+  font-weight: 700;
+  color: var(--verm);
 }
 
 @media screen and (max-width: 800px){
