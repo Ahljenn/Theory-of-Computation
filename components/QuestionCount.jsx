@@ -1,7 +1,7 @@
 import React from 'react';
 
-function NoCount(props){
-  return(
+function NoCount(props) {
+  return (
     <div class="question-count-container">
       <p>Number of questions:</p>
       <p class="count-none">{props.count}</p>
@@ -9,8 +9,8 @@ function NoCount(props){
   )
 }
 
-function WithCount(props){
-  return(
+function WithCount(props) {
+  return (
     <div class="question-count-container">
       <p>Number of questions:</p>
       <p class="count">{props.count}</p>
@@ -18,15 +18,18 @@ function WithCount(props){
   )
 }
 
-function QuestionCount(props){
-    {if(props.count == 0){
-    return(
+function QuestionCount(props) {
+  {
+    if (props.count == 0) {
+      return (
         <NoCount count={props.count} />
-    )} else {
-      return(
+      )
+    } else {
+      return (
         <WithCount count={props.count} />
       )
-    }}
+    }
+  }
 }
 
 export default QuestionCount;

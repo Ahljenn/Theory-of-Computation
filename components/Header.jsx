@@ -7,7 +7,7 @@ function Header() {
     <header>
       <h1>Theory of Computation: Review</h1>
       <p>
-        Content from John MacCormick's 
+        Content from John MacCormick's
         <b><i> What Can Be Computed?</i></b>
       </p>
       <p><i>Computability & Complexity</i></p>
