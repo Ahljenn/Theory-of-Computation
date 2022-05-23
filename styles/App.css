@@ -105,7 +105,12 @@ body::-webkit-scrollbar-thumb {
     margin-left: 10%;
     text-align: center;
   }
+  
   .question {
     margin-bottom: 10px;
+  }
+  
+  .spinny {
+    font-size: 40px;
   }
 }

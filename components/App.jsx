@@ -45,7 +45,7 @@ function App() {
           title="Shuffle questions"
           onClick={handleShuffle}
         >
-          <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+          <i class="fa fa-refresh fa-spin fa-3x fa-fw spinny" aria-hidden="true"></i>
         </button>
         
         <input

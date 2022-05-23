@@ -5,7 +5,15 @@
     },
     {
       "question": "Is a Turing machine as powerful as finite automata? Why or why not?",
-      "answer": "Turing machines are strictly more powerful than finite automata since they can use the tape to remember as much information as desired - finite set of states but infinitely many possible configurations."
+      "answer": "Turing machines are strictly more powerful than finite automata since they can use their tape to remember as much information as desired - finite set of states but infinitely many possible configurations."
+    },
+    {
+      "question": "When does a program P recognize a language L?",
+      "answer": "For all I ∈ L, P(I) = 'yes'. For all I ∉ L, either P(I) is undefined or P(I) = 'no.'"
+    },
+    {
+      "question": "How can it be that universal computation appears in the real world?",
+      "answer": "There exists universal Python programs that can simulate other python programs. It has also been observed there exists an equivalent Turing machine U. Any modern computer has universally built into it at several layers through some form of abstraction."
     },
     {
       "question": "What is considered a 'computational step?'",
@@ -32,12 +40,16 @@
       "answer": "The transition function that maps (q, x) to a finite set of possible 3-tuples (rather than a single 3-tuple). (q' - new state, x' - new symbol, d' - direction to move)."
     },
     {
-    "question": "What is a regular language?",
-    "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression."
+      "question": "What is a regular language?",
+      "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression."
     },
     {
       "question": "What are the three factors of runtime?",
       "answer": "Dependence on hardware. Dependence on easy or hard input. Dependence on length of the input."
+    },
+    {
+      "question": "What is the halting problem and why is it practical?",
+      "answer": "Given any program P and input I, we ask does P terminate (or halt) on input I? Some types of software halt such as computational programs whereas some run indefinitely (i.e: Operating Systems and Web servers.)"
     },
     {
       "question": "Name the key differences between Turing machines and finite automata.",
