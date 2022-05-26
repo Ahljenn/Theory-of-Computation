@@ -40,12 +40,20 @@
       "answer": "Does not change what we can compute, but changes how fast we can compute it. - 170"
     },
     {
+      "question": "What is the essence of P vs. NP?",
+      "answer": "Are P and NP the same complexity class? That is, do they each consist of the same set of decision problems? - 294"
+    },
+    {
       "question": "What does a nondeterministic turing machine consist of?",
       "answer": "The transition function that maps (q, x) to a finite set of possible 3-tuples (rather than a single 3-tuple). (q' - new state, x' - new symbol, d' - direction to move). - 74"
     },
     {
       "question": "What is a regular language?",
-      "answer": "A language is regular iff it is decided by some DFA. A language is regular if it's decided by some NFA, or represented by some regular expression. - 181"
+      "answer": "A language is regular iff it is decided by some DFA or NFA, or alternatively represented by some regular expression. - 181"
+    },
+    {
+      "question": "What is a consequence if P = NP?",
+      "answer": "If P = NP then it must be possible to convert any polytime, nondeterministic program ND.py into a polytime, deterministic program D.py that computes the same answers. Recall: Programs are equivalent if they produce the same answers on the same inputs. - 295"
     },
     {
       "question": "What are the three factors of runtime?",
@@ -116,7 +124,11 @@
       "answer": "F is in PolyCheck if we can verify / check its positive instances in polynomial time. - 256"
     },
     {
-      "question": "When do we call a program 'determinstic?'",
-      "answer": "A program is said to be 'determinstic' if its execution path is uniquely determined by the state of C when the program begins executing.' - 24"
+      "question": "When do we call a program 'deterministic?'",
+      "answer": "A program is said to be 'deterministic' if its execution path is uniquely determined by the state of C when the program begins executing.' - 24"
+    },
+    {
+      "question": "What is diagonalization?",
+      "answer": "The idea that a program can analyze itself when given itself as input. - X"
     }
 ]
