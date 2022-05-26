@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import QuestionBlock from './QuestionBlock.jsx';
 import QuestionCount from './QuestionCount.jsx';
 import Q from '../data/questions.json';
+import E from '../data/examples.json';
 import '../styles/App.css';
 
 //Shuffle questions each visit
