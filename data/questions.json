@@ -36,6 +36,10 @@
       "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject). - 164"
     },
     {
+      "question": "What are the five computational problems?",
+      "answer": "Search, Decision, Threshold, Optimization, Function - 57"
+    },
+    {
       "question": "How does adding nondeterminsim effect a computational model in terms of computability and complexity?",
       "answer": "Does not change what we can compute, but changes how fast we can compute it. - 170"
     },
@@ -96,6 +100,10 @@
       "answer": "PolyCheck is in NPoly, and vice versa. - 259"
     },
     {
+      "question": "What does it mean for a program to be recognizable?",
+      "answer": "There's a program that: always terminates with the right answer ('yes') on positive instances, never wrong on negative instances, may enter an infinite loop on negative instances. - 113"
+    },
+    {
       "question": "Which complexity class does not depend on the type of computational model used?",
       "answer": "O(1) - Constant Time. - 223"
     },
@@ -106,6 +114,10 @@
     {
       "question": "What is implied if F 'reduces' to G?",
       "answer": "F can be solved if G can be solved; F is no harder than G. - 116"
+    },
+    {
+      "question": "What are the five operations on languages?",
+      "answer": "Union, intersection, complement, concatenation, repetition (Kleene star). - 52"
     },
     {
       "question": "What is the significance of a regular expression (regex) in terms of the theory of computation?",

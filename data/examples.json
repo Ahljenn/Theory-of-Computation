@@ -1,10 +1,34 @@
 [
     {
       "question": "What are problems in the complexity class Poly?",
-      "answer": "ContainsGAGA, Multiply, SortWords"
+      "answer": "ContainsGAGA, Multiply, SortWords, All3Sets, ShortestPath. - 236"
     },
     {
       "question": "What are problems in the complexity class Expo?",
-      "answer": "ContainsGAGA, Multiply, SortWords, Factor, MCopiesOfC"
+      "answer": "<Problems from Poly> as well as Factor, MCopiesOfC, AllSubsets, TSPPath. - 236"
+    },
+    {
+      "question": "What is YesOnString and CrashOnString in terms of recognizability and undecidability?",
+      "answer": "They are both recognizable but undecidable. - 113"
+    },
+    {
+      "question": "How does the moreCsThanGs Turing Machine work?",
+      "answer": "Starts left of tape, scan characters one by one, moving to the right. Rejects if there is a left over 'G' if encountered a 'C'. If no C or G is encountered before the x, then reject since there are equal amounts of C's and G's. Accepts if there is a left over 'G' if we encounter a 'C' first. - 81"
+    },
+      {
+      "question": "What is an example of a threshold problem?",
+      "answer": "FindShortPath. - 57"
+    },
+    {
+      "question": "What is an example of an optimization problem?",
+      "answer": "ShortestPath. - 57"
+    },
+    {
+      "question": "What is an example of a search problem?",
+      "answer": "FindPath. - 57"
+    },
+     {
+      "question": "What is an example of a function problem?",
+      "answer": "Multiply. - 57"
     }
 ]
