@@ -35,6 +35,12 @@ function App() {
     setSearchTerm(searchTerm == "" ? " " : ""); //Set search term to either empty string or space depending on current value to re-render the component
   }
 
+  function handleToggle(){
+    setText(""); //Resets the input field on shuffle
+    setQuestionData(questionData == Q ? E : Q);
+    setSearchTerm(searchTerm == "" ? " " : "");
+  }
+
   function handleText() {
     setSearchTerm(event.target.value);
     setText(event.target.value); //Allows text to reset on button click (shuffle)
@@ -46,20 +52,31 @@ function App() {
       <QuestionCount count={numberQuestions} />
 
       <div class="interactions">
+        <div class="main-buttons">
         <button
-          class="shuffle-button"
           title="Shuffle questions"
           onClick={handleShuffle}
         >
-          <i class="fa fa-refresh fa-spin fa-3x fa-fw spinny" aria-hidden="true"></i>
+          <i class="fa fa-random fa-3x fa-fw spinny" aria-hidden="true"></i>
         </button>
 
-        <input
-          type="text"
-          value={text}
-          placeholder="Search a keyword to filter topics..."
-          onChange={handleText}
-        />
+        <button
+          title="Toggle questions"
+          onClick={handleToggle}
+        >
+          <i class="fa fa-refresh fa-spin fa-3x fa-fw spinny" aria-hidden="true"></i>
+        </button>
+          
+        </div>
+
+      <input
+        type="text"
+        value={text}
+        placeholder="Search a keyword to filter topics..."
+        onChange={handleText}
+      />
+
+        
       </div>
       {questionData.filter((val) => {
         if (searchTerm == "") {
