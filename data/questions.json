@@ -8,6 +8,10 @@
       "answer": "Accepts if any clone accepts. Rejects if all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop). - 170"
     },
     {
+      "question": "What is a Tseytin transformation?",
+      "answer": "Converts any Boolean circuit into a 3-CNF formula in linear time. Utilized in particular polyreductions."
+    },
+    {
       "question": "Is a Turing machine as powerful as finite automata? Why or why not?",
       "answer": "Turing machines are strictly more powerful than finite automata since they can use their tape to remember as much information as desired - finite set of states but infinitely many possible configurations. - 183"
     },
@@ -34,6 +38,10 @@
     {
       "question": "What does a deterministic finite automaton (DFA) consist of?",
       "answer": "An alphabet Σ of symbols, including blank symbol; State set Q, including start state q-0, and atleast one of the halting states (q-accept, q-reject). - 164"
+    },
+    {
+      "question": "When is a computational problem NP-hard?",
+      "answer": "A computational problem F is NP-hard if there exists some NP-complete problems C with C <=_P F. - 299"
     },
     {
       "question": "What are the five computational problems?",

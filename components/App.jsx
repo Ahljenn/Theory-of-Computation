@@ -22,6 +22,9 @@ function App() {
   const [searchTerm, setSearchTerm] = useState(""); //Search value
   const [text, setText] = useState(""); //Search field text
   const [numberQuestions, setQuestionCount] = useState(questionData.length); //Question count display
+
+  const [typeText, setTypeText] = useState("questions");
+  
   let counter = 0;
 
   useEffect(() => {
@@ -39,6 +42,7 @@ function App() {
     setText(""); //Resets the input field on shuffle
     setQuestionData(questionData == Q ? E : Q);
     setSearchTerm(searchTerm == "" ? " " : "");
+    setTypeText(typeText == "questions" ? "examples" : "questions");
   }
 
   function handleText() {
@@ -49,7 +53,10 @@ function App() {
   return (
     <main>
 
-      <QuestionCount count={numberQuestions} />
+      <QuestionCount 
+        count={numberQuestions}
+        type={typeText}
+      />
 
       <div class="interactions">
         <div class="main-buttons">
