@@ -65,6 +65,10 @@ input, select, textarea {
   color: var(--acid);
 }
 
+button:active {
+  transform: translateY(4px);
+}
+
 .question {
   margin-bottom: 5px;
 }
