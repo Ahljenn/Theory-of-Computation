@@ -108,6 +108,14 @@
       "answer": "PolyCheck is in NPoly, and vice versa. - 259"
     },
     {
+      "question": "When is a property asymptotic?",
+      "answer": "A property is asymptotic if it only depends on sufficiently large values of n. - 202"
+    },
+    {
+      "question": "What are common big-O mistakes?",
+      "answer": "Forgetting 'at most'. Constants or extra terms inside O(.) are misleading even though it's technically not wrong. - 202"
+    },
+    {
       "question": "What does it mean for a program to be recognizable?",
       "answer": "There's a program that: always terminates with the right answer ('yes') on positive instances, never wrong on negative instances, may enter an infinite loop on negative instances. - 113"
     },

@@ -66,6 +66,7 @@ input, select, textarea {
 }
 
 button:active {
+  color: var(--acid);
   transform: translateY(4px);
 }
 
