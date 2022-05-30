@@ -8,8 +8,12 @@
       "answer": "Accepts if any clone accepts. Rejects if all clones reject. Otherwise, output is undefined (Clone can enter an infinite loop). - 170"
     },
     {
+      "question": "When does a decision problem have a polynomial-time mapping reduction?",
+      "answer": "A decision problem F has a polynomial-time mapping reduction to problem G ( F =<_P G) if there exists a polytime program C (for Convert) that converts instances of F into instances of G, such that C maps positive instances of F to positive instances of G, and negative instances of F to negatives instances of G. - 273"
+    },
+    {
       "question": "What is a Tseytin transformation?",
-      "answer": "Converts any Boolean circuit into a 3-CNF formula in linear time. Utilized in particular polyreductions."
+      "answer": "Converts any Boolean circuit into a 3-CNF (conjunctive normal form) formula in linear time. Utilized in particular polyreductions."
     },
     {
       "question": "Is a Turing machine as powerful as finite automata? Why or why not?",
@@ -46,6 +50,10 @@
     {
       "question": "What are the five computational problems?",
       "answer": "Search, Decision, Threshold, Optimization, Function - 57"
+    },
+    {
+      "question": "What is circuit satisfiability?",
+      "answer": "Given an electrical circuit with a large number of inputs and one output, is it possible for the output of the circuit to be 1? Any setting that produces a 1 is said to satisfy the circuit. - 281"
     },
     {
       "question": "How does adding nondeterminsim effect a computational model in terms of computability and complexity?",
@@ -154,6 +162,10 @@
     {
       "question": "When do we call a program 'deterministic?'",
       "answer": "A program is said to be 'deterministic' if its execution path is uniquely determined by the state of C when the program begins executing.' - 24"
+    },
+    {
+      "question": "Why is P a subset of NP?",
+      "answer": "Any decision problem D in NP can be solved by some determinstic polytime program. But a determinstic program is just a special case of a non-determionstic one that uses only one thread. Thus D can be regarded as a non-determinstic polytime program that solves D, thus D is in NP. - 295"
     },
     {
       "question": "What is diagonalization?",
