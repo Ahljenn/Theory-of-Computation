@@ -85,7 +85,7 @@
     },
     {
       "question": "What does it mean if two computational models are said to be 'Turing equivalent?'",
-      "answer": "Two computational models are 'Turing equivalent' if they can solve the same set of probkems. - 98"
+      "answer": "Two computational models are 'Turing equivalent' if they can solve the same set of problems. - 98"
     },
     {
       "question": "Name the key differences between Turing machines and finite automata.",
@@ -128,8 +128,8 @@
       "answer": "There's a program that: always terminates with the right answer ('yes') on positive instances, never wrong on negative instances, may enter an infinite loop on negative instances. - 113"
     },
     {
-      "question": "Which complexity class does not depend on the type of computational model used?",
-      "answer": "O(1) - Constant Time. - 223"
+      "question": "Which complexity class(es) does not depend on the type of computational model used?",
+      "answer": "Poly and Expo - 238"
     },
     {
       "question": "What is a computational problem?",
