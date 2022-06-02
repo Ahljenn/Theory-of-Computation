@@ -34,5 +34,17 @@
     {
       "question": "What is an example of a function problem?",
       "answer": "Multiply. - 57"
+    },
+    {
+      "question": "What are examples of tractable problems?",
+      "answer": "Shortest path, Web search, Error correction. - 4"
+    },
+      {
+      "question": "What are examples of intractable problems?",
+      "answer": "Multiple sequence alignment, Decryption. - 4"
+    },
+      {
+      "question": "What are examples of uncomputable problems?",
+      "answer": "A perfect bug finding program, Solving integer polynomial equations. - 4"
     }
 ]

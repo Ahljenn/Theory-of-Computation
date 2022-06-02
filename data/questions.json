@@ -169,6 +169,18 @@
     },
     {
       "question": "What is diagonalization?",
-      "answer": "The idea that a program can analyze itself when given itself as input. - X"
+      "answer": "The idea that a program can analyze itself when given itself as input. - 39"
+    },
+    {
+      "question": "What is an accepter?",
+      "answer": "A Turing machine where we are only interested in the accept/reject decision. - 77"
+    },
+    {
+      "question": "What is transducer?",
+      "answer": "A Turing machine where we are only itnerested in the output. - 77"
+    },
+    {
+      "question": "Why is Poly a subset of Expo?",
+      "answer": "Given any polynomial n^k, the function 2^n dominates n^k. Thus, any algorithm that is in O(n^k) is also in O(2^n). - 230"
     }
 ]
