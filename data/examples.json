@@ -39,12 +39,24 @@
       "question": "What are examples of tractable problems?",
       "answer": "Shortest path, Web search, Error correction. - 4"
     },
-      {
+    {
+      "question": "Which polyreduction requires clause splitting?",
+      "answer": "SAT <=P 3-SAT - 288"
+    },
+    {
+      "question": "Which polyreduction requires THE Tysetin Transformation?",
+      "answer": "CircuitSAT <=P SAT- 287"
+    },
+    {
       "question": "What are examples of intractable problems?",
       "answer": "Multiple sequence alignment, Decryption. - 4"
     },
-      {
+    {
       "question": "What are examples of uncomputable problems?",
       "answer": "A perfect bug finding program, Solving integer polynomial equations. - 4"
+    },
+    {
+      "question": "What are famous undecidable problems not about programs?",
+      "answer": "Diophantine equations, Post correspondence problem, Cellular Automata. - 135"
     }
 ]
