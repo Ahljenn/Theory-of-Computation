@@ -44,7 +44,7 @@
       "answer": "SAT <=P 3-SAT - 288"
     },
     {
-      "question": "Which polyreduction requires THE Tysetin Transformation?",
+      "question": "Which polyreduction requires the Tysetin Transformation?",
       "answer": "CircuitSAT <=P SAT- 287"
     },
     {

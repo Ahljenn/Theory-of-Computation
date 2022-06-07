@@ -101,7 +101,7 @@
     },
     {
       "question": "What is the difference between a strict NFA and an NFA?",
-      "answer": "A strict NFA transition fucntion maps to set of states. An NFA allows for ∈-transitions. - 169"
+      "answer": "A strict NFA transition function maps to set of states. An NFA allows for ∈-transitions. - 169"
     },
     {
       "question": "What is implied if F 'polyreduces' to G?",
@@ -189,7 +189,7 @@
     },
     {
       "question": "Main difference between NP-hard vs. NP-complete?",
-      "answer": "A computational problem F is NP-hard if there exists some NP-complete problem C with C polyreducing to F. NP-complete problems must be in NP (PolyCheck/NPoly), decision problems only. NP-hard problems may be outside and do not have to be decision problems (like HaltEx). NP-Complete ⊆ NPHard, but not the converse. - 298"
+      "answer": "A computational problem F is NP-hard if there exists some NP-complete problem C with C polyreducing to F. NP-complete problems must be in NP (PolyCheck/NPoly), decision problems only. NP-hard problems may be outside and do not have to be decision problems (like HaltEx). NP-Complete ⊆ NP-Hard, but not the converse. - 298"
     },
     {
       "question": "What is the consequence of polyequivalence?",
